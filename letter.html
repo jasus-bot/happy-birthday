@@ -3,60 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Moteee 🤍</title>
 
-<title>A Letter For You ❤️</title>
+<link rel="stylesheet" href="style.css">
 
 <style>
 
 body{
-    margin:0;
-    padding:0;
-    background:linear-gradient(135deg,#ffe6ef,#fffafc);
-    font-family:Georgia,serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:#FFF9F5;
 }
 
 .card{
-    width:85%;
-    max-width:700px;
-    background:white;
-    padding:40px;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-    animation:fade 1.5s;
+text-align:center;
 }
 
-h1{
-    text-align:center;
-    color:#ff4f81;
+.hidden{
+display:none;
+margin-top:30px;
+text-align:left;
 }
 
-p{
-    font-size:20px;
-    line-height:1.8;
-    color:#444;
-}
-
-.signature{
-    text-align:right;
-    margin-top:40px;
-    font-size:22px;
-    color:#ff4f81;
-}
-
-@keyframes fade{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+.fade{
+animation:fade .8s;
 }
 
 </style>
@@ -67,36 +39,187 @@ p{
 
 <div class="card">
 
-<h1>💌 Happy Birthday ❤️</h1>
+<h1>✉️</h1>
+
+<h2>For</h2>
+
+<h1>Moteee 🤍</h1>
 
 <p>
 
-Dear My Love,
-
-<br><br>
-
-Today is all about celebrating you.
-
-I just wanted you to know how grateful I am that you exist and that I get to be part of your life.
-
-Thank you for making me smile, making me laugh, and making ordinary days feel special.
-
-I hope this birthday brings you as much happiness as you bring to everyone around you.
-
-You deserve every good thing this world has to offer.
-
-Happy Birthday. ❤️
+This letter is only for you.
 
 </p>
 
-<div class="signature">
+<button onclick="openLetter()">
 
-Love,<br>
-Your Name ❤️
+💌 Open Letter
+
+</button>
+
+<div id="letter" class="hidden fade">
+
+<hr style="margin:30px 0;">
+
+<p>
+
+<b>Dear Moteee,</b>
+
+<br><br>
+
+Happy Birthdayyy. 🤍
+
+<br><br>
+
+Sabse pehle...
+
+Mujhe nahi pata ke ye website kitni achi bani hai 😂...
+
+Lekin itna zaroor pata hai ke is mein bohot si mehnat aur us se bhi zyada tumhare liye pyaar dala hai.
+
+<br><br>
+
+Aur agar tum ye parh rahe ho...
+
+Toh congratulations...
+
+Tum officially 20 ke ho gaye ho. 🥳
+
+<br><br>
+
+Ab serious wali baat...
+
+Main bas tumhe ek cheez batana chahti hoon...
+
+I'm really proud of you.
+
+<br><br>
+
+Main dekhti hoon ke tum kitni mehnat karte ho.
+
+Kabhi apni khwahishon ko side pe rakh kar kaam karte ho...
+
+Kabhi future ke liye paisay banane ki koshish karte ho.
+
+Aur shayad tumhe lagta ho ke koi notice nahi karta...
+
+Lekin main karti hoon.
+
+<br><br>
+
+Aur isi liye main tum par itna proud hoon.
+
+Tum rukte nahi ho.
+
+Chahe kitna bhi pressure ho.
+
+Aur mujhe yaqeen hai...
+
+Ek din tumhari ye saari mehnat zaroor rang layegi.
+
+<br><br>
+
+Waise...
+
+25 March yaad hai? 🤍
+
+Mujhe bilkul idea nahi tha ke us din ka ek random message meri favourite routine ban jayega.
+
+Roz tumse baat karna...
+
+Tumhari updates sunna...
+
+Aur kabhi kabhi tumhe tang karna 😂...
+
+Mere din ka favourite part ban gaya hai.
+
+<br><br>
+
+Aur haan...
+
+Jab bhi main bolti hoon ke main tumhe maarungi...
+
+Tumhara favourite dialogue...
+
+<b>"Abhi itni bari ni hui."</b>
+
+😂
+
+<br><br>
+
+Aur honestly...
+
+Shayad kabhi bari hona bhi nahi chahti.
+
+<br><br>
+
+Ek aur complaint...
+
+Mera naam...
+
+<b>Kalaishi Aurat??</b>
+
+Seriously? 😒😂
+
+<br><br>
+
+Lekin theek hai...
+
+Main phir bhi tumhari favourite annoying bacha hoon.
+
+<br><br>
+
+Aur agar kabhi life bohot mushkil lage...
+
+Ya lage ke sab kuch bohot heavy ho gaya hai...
+
+Bas itna yaad rakhna...
+
+Ek annoying bacha hai...
+
+Jo tum par bohot believe karta hai.
+
+Aur hamesha karta rahega.
+
+Pakka. 🤍
+
+<br><br>
+
+Happy Birthday, Moteee.
+
+Allah tumhe hamesha khush rakhe, sehat de, sukoon de aur tumhari har halal dua aur har mehnat ko kamyabi mein badal de.
+
+Ameen. 🤍
+
+<br><br>
+
+<b>— Your annoying bacha 🌷</b>
+
+</p>
+
+<div style="text-align:center;">
+
+<button onclick="window.location.href='memories.html'">
+
+Continue 🌷
+
+</button>
 
 </div>
 
 </div>
+
+</div>
+
+<script>
+
+function openLetter(){
+
+document.getElementById("letter").style.display="block";
+
+}
+
+</script>
 
 </body>
 </html>
