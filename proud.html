@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Things I Admire About You 🤍</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+
+background:#FFF9F5;
+
+}
+
+.card{
+
+text-align:center;
+
+}
+
+.reason{
+
+display:none;
+
+font-size:22px;
+
+line-height:1.9;
+
+margin:40px 0;
+
+animation:fade .7s;
+
+}
+
+button{
+
+margin-top:25px;
+
+}
+
+.final{
+
+display:none;
+
+margin-top:40px;
+
+animation:fade .7s;
+
+}
+
+.heart{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section>
+
+<div class="card">
+
+<div class="heart">🌷</div>
+
+<h1>Things I Admire About You</h1>
+
+<p>
+
+There are so many...
+
+but let's start with a few. 🤍
+
+</p>
+
+<div id="r1" class="reason" style="display:block;">
+
+You never stop trying.
+
+Even when things get difficult...
+
+You keep moving forward.
+
+And I really admire that.
+
+</div>
+
+<div id="r2" class="reason">
+
+I know you're working hard for your future.
+
+Sometimes sacrificing the things you want today...
+
+So tomorrow can be better.
+
+I hope you know...
+
+That doesn't go unnoticed.
+
+</div>
+
+<div id="r3" class="reason">
+
+No matter how busy you are...
+
+You still make time for me.
+
+Maybe it's something small to you...
+
+But it means a lot to me.
+
+🤍
+
+</div>
+
+<div id="r4" class="reason">
+
+One of my favourite things...
+
+Is how you always manage to make me laugh.
+
+Especially when I start acting brave...
+
+And you hit me with...
+
+<br><br>
+
+<b>"Abhi itni bari ni hui."</b>
+
+😂
+
+</div>
+
+<div id="r5" class="reason">
+
+I don't just admire who you are today...
+
+I'm excited for the person you're becoming.
+
+Because I know...
+
+One day all this hard work will be worth it.
+
+And I'll probably be there saying...
+
+"I told you so."
+
+😌🤍
+
+</div>
+
+<div id="r6" class="reason">
+
+And finally...
+
+Out of everyone in this world...
+
+I'm really glad...
+
+I decided to send...
+
+<b>"Heloo."</b>
+
+That random little message...
+
+Turned into one of the best parts of my life.
+
+🤍
+
+</div>
+
+<button onclick="nextReason()" id="nextBtn">
+
+Next 🤍
+
+</button>
+
+<div class="final" id="final">
+
+<p>
+
+So if there's one thing I want you to remember after today...
+
+It's this...
+
+<br><br>
+
+I'm proud of you.
+
+Not because you've achieved everything already...
+
+But because I know how hard you're trying.
+
+And that's enough to make me proud.
+
+🤍
+
+<br><br>
+
+Now...
+
+Enough emotional stuff.
+
+Don't let it get to your head.
+
+😂
+
+</p>
+
+<button onclick="window.location.href='music.html'">
+
+One Last Surprise 🎵
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+let current=1;
+
+function nextReason(){
+
+document.getElementById("r"+current).style.display="none";
+
+current++;
+
+if(current<=6){
+
+document.getElementById("r"+current).style.display="block";
+
+}
+
+else{
+
+document.getElementById("nextBtn").style.display="none";
+
+document.getElementById("final").style.display="block";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
