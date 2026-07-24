@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday 🤍</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+
+background:#FFF9F5;
+
+}
+
+.card{
+
+text-align:center;
+
+}
+
+.hidden{
+
+display:none;
+
+margin-top:30px;
+
+animation:fade 1s;
+
+}
+
+.small{
+
+margin-top:40px;
+
+font-size:18px;
+
+color:#888;
+
+}
+
+.confetti{
+
+position:fixed;
+
+top:-10px;
+
+font-size:22px;
+
+animation:fall 4s linear infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:translateY(-10vh);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(110vh);
+
+opacity:0;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section>
+
+<div class="card">
+
+<h1>Happy Birthday,<br>Moteee 🤍</h1>
+
+<p>
+
+Thank you...
+
+For replying to...
+
+<b>"Heloo."</b>
+
+🤍
+
+<br><br>
+
+Thank you...
+
+For every random conversation.
+
+Every laugh.
+
+Every Pakka.
+
+Every...
+
+<b>"Abhi itni bari ni hui."</b>
+
+😂
+
+<br><br>
+
+And thank you...
+
+For letting me be your Bacha.
+
+</p>
+
+<button onclick="showFinal()">
+
+🤍 One Last Thing
+
+</button>
+
+<div id="last" class="hidden">
+
+<p>
+
+Kabhi kabhi...
+
+Jab tum khud par believe karna bhool jao...
+
+<br><br>
+
+Toh meri taraf se thora sa believe borrow kar lena.
+
+Mere paas bohot hai.
+
+🤍
+
+<br><br>
+
+Aur yaad rakhna...
+
+Main hamesha tumhari biggest supporter rahungi.
+
+Chahe tum bhool jao...
+
+Main nahi bhoolungi.
+
+<br><br>
+
+🤏
+
+Pakka?
+
+</p>
+
+<button onclick="finish()">
+
+Pakka 🤍
+
+</button>
+
+</div>
+
+<div id="ending" class="hidden">
+
+<h2>
+
+Happy Birthday once again,
+
+Moteee. 🌷
+
+</h2>
+
+<p>
+
+Allah tumhe hamesha sehat,
+
+khushi,
+
+sukoon,
+
+aur bohot si kamyabi de.
+
+Tumhari har halal dua qubool ho.
+
+Aur tum hamesha us insaan par proud ho sako...
+
+Jo tum ban rahe ho.
+
+Ameen.
+
+🤍
+
+</p>
+
+<p class="small">
+
+P.S.
+
+Thank you...
+
+For making one Kalaishi Aurat...
+
+feel very lucky.
+
+😂🤍
+
+<br><br>
+
+See you in our next chat... 💬
+
+<br><br>
+
+<b>— Your annoying bacha 🌷</b>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function showFinal(){
+
+document.getElementById("last").style.display="block";
+
+}
+
+function finish(){
+
+document.getElementById("ending").style.display="block";
+
+for(let i=0;i<35;i++){
+
+let flower=document.createElement("div");
+
+flower.className="confetti";
+
+flower.innerHTML=Math.random()>0.5?"🌸":"🤍";
+
+flower.style.left=Math.random()*100+"vw";
+
+flower.style.animationDelay=Math.random()*3+"s";
+
+document.body.appendChild(flower);
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
