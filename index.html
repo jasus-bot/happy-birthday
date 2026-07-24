@@ -4,82 +4,110 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Happy Birthday ❤️</title>
+<title>Happy Birthday, Moteee 🤍</title>
 
-<style>
-body{
-margin:0;
-padding:0;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:linear-gradient(135deg,#ffe6f0,#fff7f9);
-font-family:Arial,sans-serif;
-overflow:hidden;
-}
-
-.container{
-text-align:center;
-animation:fadeIn 2s;
-}
-
-h1{
-font-size:3rem;
-color:#ff4f81;
-margin-bottom:15px;
-}
-
-p{
-font-size:1.2rem;
-color:#555;
-margin-bottom:30px;
-}
-
-button{
-padding:15px 35px;
-font-size:18px;
-border:none;
-border-radius:50px;
-background:#ff4f81;
-color:white;
-cursor:pointer;
-transition:0.3s;
-}
-
-button:hover{
-transform:scale(1.08);
-}
-
-@keyframes fadeIn{
-from{opacity:0;}
-to{opacity:1;}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div class="container">
+<section id="home">
 
-<h1>Happy Birthday ❤️</h1>
+<div class="card">
 
-<p>I made something special just for you.</p>
+<h1>Happy Birthday,<br>Moteee 🤍</h1>
 
-<button onclick="nextPage()">
-Open Your Gift 🎁
+<p style="text-align:center;">
+
+I know you don't really like making a big deal out of your birthday...
+
+<br><br>
+
+But this one is different.
+
+<br><br>
+
+Because this wasn't bought.
+
+It wasn't copied.
+
+It was made...
+
+just for you.
+
+🌷
+
+</p>
+
+<div style="text-align:center;">
+
+<button onclick="scrollToSection('warning')">
+
+Open Your Gift 💌
+
 </button>
 
 </div>
 
-<script>
+</div>
 
-function nextPage(){
-  window.location.href = "letter.html";
-}
+</section>
 
-</script>
+<section id="warning">
+
+<div class="card">
+
+<h2>⚠️ Before You Continue...</h2>
+
+<p>
+
+This website contains:
+
+<br><br>
+
+☑ One overworked Moteee
+
+<br>
+
+☑ One Kalaishi Aurat 😂
+
+<br>
+
+☑ Too much yapping
+
+<br>
+
+☑ One emotional paragraph
+(probably)
+
+<br>
+
+☑ One annoying Bacha
+
+<br><br>
+
+Continue at your own risk.
+
+🤍
+
+</p>
+
+<div style="text-align:center;">
+
+<button onclick="window.location.href='letter.html'">
+
+I'm Ready 🌷
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
